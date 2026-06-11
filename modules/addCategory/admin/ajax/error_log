@@ -1,0 +1,2 @@
+[24-Jun-2024 07:36:52 UTC] PHP Notice:  Undefined index: categoryName in /home1/aadil1/public_html/vansale/modules/addCategory/admin/ajax/nameDuplicationCheck.php on line 3
+[29-Jun-2024 10:01:11 UTC] PHP Notice:  Undefined index: categoryName in /home1/aadil1/public_html/vansale/modules/addCategory/admin/ajax/nameDuplicationCheck.php on line 3

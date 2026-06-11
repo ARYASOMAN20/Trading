@@ -1,0 +1,21 @@
+<?php
+require_once('../../../../modules/invoiceEdit/admin/models/invoiceEditmodel.php');
+	$objhModel= new invoiceEditmodel();
+	$j_array = array();
+	$array   = array();
+    if(isset($_GET['term'])){
+    $q	   = $_GET['term'];
+	$my_data      = $q;
+	//$jobTypeId = $_GET['jobType'];
+	$rowInvoiceNo = $objhModel->invoiceNoAutocomplete($my_data);
+	if($rowInvoiceNo){
+		while($row = mysqli_fetch_array($rowInvoiceNo)){
+			$array['value'] = $row['invoiceNo'];
+			$array['key']   = $row['invoiceId'];
+			array_push($j_array,$array);
+		}
+	}
+	echo json_encode($j_array);
+}
+
+?>
