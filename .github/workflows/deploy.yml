@@ -22,5 +22,5 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "."
+          source: "accountsSideMenu.php"
           target: "/home1/aadilcare/public_html/trading"
