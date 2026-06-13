@@ -20,4 +20,3 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           script: |
             cd /home1/aadilcare/public_html/trading
-            git pull origin main
