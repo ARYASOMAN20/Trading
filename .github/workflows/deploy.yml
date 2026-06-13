@@ -19,5 +19,5 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            cd /home/aadilcare/public_html/trading
+            cd /home1/aadilcare/public_html/trading
             git pull origin main
