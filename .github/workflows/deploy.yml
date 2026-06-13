@@ -10,10 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
       - name: Debug
         run: |
           echo "FILES IN REPOSITORY"
           find . -type f
+          
       - name: Deploy via SSH
         uses: appleboy/scp-action@v0.1.7
         with:
