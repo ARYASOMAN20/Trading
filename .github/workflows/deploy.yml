@@ -18,5 +18,5 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.SERVER_PORT }}
-          script: |
-            cd /home1/aadilcare/public_html/trading
+          source: "."
+          target: "/home1/aadilcare/public_html/trading"
